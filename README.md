@@ -1,6 +1,7 @@
 # algorithm
 
 ## theory 
-#### 数据结构和算法的学习笔记。
+- My learning notes of data structure and algorithm.
 ## leetcode
-#### LeetCode 在线编程答案及笔记。 
+- My C++ solutions and notes of leetcode problems.
+ 
