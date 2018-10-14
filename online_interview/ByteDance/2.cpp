@@ -33,7 +33,7 @@ m 段，使得每段的和都小于这个数值，则满足划分，反之不满
 直至找到一个最小的满足划分的值为止。
 
 */
-/*#include <iostream>
+#include <iostream>
 using namespace std;
 
 int Judge(int data[], int sum, int m, int n);
@@ -109,4 +109,4 @@ int Judge(int data[], int mid, int m, int n)
     }
 
     return 1;
-}*/
+}
