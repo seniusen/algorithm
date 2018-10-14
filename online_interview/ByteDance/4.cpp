@@ -70,7 +70,7 @@ int main()
         data[i] = double(b[i]) / m;
     }
 
-	// 暴力求解
+    // 暴力求解
     long sum1 = 0;
     int j = 0;
     for (i = 0; i < n-1; i++)
@@ -82,18 +82,17 @@ int main()
     }
     cout << sum1 << endl;
 
-
-	//  分别求出整数部分和小数部分
+    //  分别求出整数部分和小数部分
     for (i = 0; i < n; i++)
     {
         inte[i] = b[i] / m;
         frac[i] = double(b[i]) / m - inte[i];
     }
 
-	// 整数部分升序排列，小数部分随整数部分同步调整
+    // 整数部分升序排列，小数部分随整数部分同步调整
     Quick_Sort(inte, frac, 0, n-1);
 
-	// 相邻区间差乘以系数求总和
+    // 相邻区间差乘以系数求总和
     int error[n-1] = {0};
     long sum = 0;
     for (i = 0; i < n-1; i++)
@@ -102,7 +101,7 @@ int main()
         sum += (i+1) * (n-i-1) * error[i];
     }
 
-	// 归并排序的同时求得小数部分逆序对数
+    // 归并排序的同时求得小数部分逆序对数
     double sorted_data[n] = {0};
     Merge_Sort(frac, 0, n-1, sorted_data);
 
