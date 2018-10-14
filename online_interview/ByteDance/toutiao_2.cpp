@@ -58,7 +58,6 @@ int MaxSubArray(int num[], int n)
 {
     int i = 0, sum = 0, max_sum = 0;
     int temp_sum[4] = {0};
-    int temp = 0;
     int zero_num = 0;
     for(i = 0; i < n; i++)
     {
@@ -93,18 +92,12 @@ int MaxSubArray(int num[], int n)
         {
             zero_num -= 1;
             sum = sum - temp_sum[0];
-            temp = temp_sum[0];
-            temp_sum[0] = temp_sum[1] - temp;
-            temp_sum[1] = temp_sum[2] - temp;
-            temp_sum[2] = temp_sum[3] - temp;
+            temp_sum[0] = temp_sum[1] - temp_sum[0];
+            temp_sum[1] = temp_sum[2] - temp_sum[0];
+            temp_sum[2] = temp_sum[3] - temp_sum[0];
             temp_sum[3] = sum;
         }
     }
-
-    cout << temp_sum[0] << endl;
-    cout << temp_sum[1] << endl;
-    cout << temp_sum[2] << endl;
-    cout << temp_sum[3] << endl;
 
     return max_sum;
 }
