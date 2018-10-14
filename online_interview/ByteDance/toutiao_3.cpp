@@ -98,7 +98,7 @@ int main()
 
             if (find_zero_num(down) < find_zero_num(right))
             {
-                flag = 1;
+                flag = Down;
             }
             else if (find_zero_num(down) > find_zero_num(right))
             {
