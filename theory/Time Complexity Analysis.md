@@ -39,8 +39,6 @@ int cal(int n)
 - 嵌套代码，复杂度相乘
 
 ### 3.3 几种常见复杂度
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
-
 - 多项式量级
    - 常量阶 $O(1)$
    - 对数阶 $O(log_n)$
