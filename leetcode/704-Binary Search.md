@@ -1,3 +1,10 @@
+#### 1. 题目
+
+![704](https://upload-images.jianshu.io/upload_images/11895466-8582c71098ba1653.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+
+#### 2. 解答
+
+```c
 
 class Solution {
 public:
@@ -63,3 +70,5 @@ public:
         return -1;
     }
 };
+
+```
